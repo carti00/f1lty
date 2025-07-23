@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252663;
+}
+
+.container {
+    background-color: #235eb81c;
+    max-width: 1200px;
+    margin: 0pxy;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos de header */
+header {
+    background-image: url(../imagenes/fo.png);
+    opacity: 0.8;
+    background-size: 100% 300%;
+    color: #160505;
+    text-decoration-line: 2px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(33, 33, 33, 0.693);
+}
+
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+}
+sub{
+    text-align: center;
+}
+/* Estilos de navegación */
+nav {
+    background-color: #444;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos de contenido */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #1882c9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(65% - 20px); /* 65% del ancho total menos el margen de 20px */
+}
+Tipos de detergentes{
+    text-align: justify;
+}
+
+#tabla_contenidos {
+    position: fixed;
+    top: 54%;
+    right: 0; /* Cambiamos left por right para posicionar a la derecha */
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #3d5161;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(32% - 30px); /* 30% del ancho total menos el margen de 20px */
+    margin-right: 0px; /* Ajustamos el margen a la derecha */
+}
+
+#tabla_contenidos h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#tabla_contenidos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tabla_contenidos ul li {
+    margin-bottom: 5px;
+}
+
+#tabla_contenidos ul li a {
+    text-decoration: none;
+    color: #020303;
+    transition: color 0.3s ease;
+}
+
+#tabla_contenidos ul li a:hover {
+    color: #333;
+}
+
+/* Estilos de footer */
+footer {
+    font-family: garamond;
+    background-color: #333;
+    color: #238fb9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: end;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.redes-sociales img {
+    border-radius: 5px;
+}
+
+.redes-sociales a:hover {
+    color: #ccc;
+}
+
+/* Estilos de imágenes */
+.imagen_izquierda,
+.imagen_final {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#drogas1 {
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.imagen_izquierda {
+    float: left;
+    margin-right: 20px;
+    padding: 0% 15% 0%;
+}
+
+.imagen_final {
+    float: right;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

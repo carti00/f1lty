@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/ventanu.css">
+
+
+
+
+<section style="max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+  <h2>Formulario de Venta de Automovil</h2>
+  <form action="bd/conexion2.php" method="post">
+    <label for="id_venta">ID Venta:</label><br>
+    <input type="text" id="id_venta" name="id_venta" required><br><br>
+
+    <label for="fecha">Fecha:</label><br>
+    <input type="date" id="fecha" name="fecha" required><br><br>
+
+    <label for="pago">Metodo de pago:</label><br>
+    <select id="pago" name="pago" required>
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+      <option value="transferencia">Transferencia</option>
+    </select><br><br>
+
+    <label for="rfc">RFC del cliente:</label><br>
+    <input type="text" id="rfc" name="rfc" required><br><br>
+
+    <label for="no_serie">Numero de serie del auto:</label><br>
+    <input type="text" id="no_serie" name="no_serie" required><br><br>
+
+    <label for="total">Total de la venta:</label><br>
+    <input type="number" id="total" name="total" required><br><br>
+
+    <!-- Botones CRUD -->
+<button type="submit" name="accion" value="registrar">Registrar Venta</button>
+  <button type="submit" name="accion" value="eliminar">Eliminar Venta</button>
+  <button type="submit" name="accion" value="modificar">Modificar Venta</button>
+  <button type="submit" name="accion" value="buscar">Buscar Venta</button>
+  </form>
+</section>

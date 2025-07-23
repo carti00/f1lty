@@ -1,0 +1,28 @@
+ <link rel="stylesheet" href="css/for.css"> <!-- Vincula el archivo CSS -->
+<section class="registro">
+  <h2>Registro de Usuario</h2>
+ <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+    </ul>
+ </nav>        
+  
+  <form action="bd/conexion.php" method="POST">
+    <label for="rfc">RFC:</label>
+    <input type="text" id="rfc" name="rfc" required>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="telefono">Telefono:</label>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+
+    <label for="direccion">Direccion:</label>
+    <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+  <button type="submit" name="accion" value="registrar">Registrar Usuario</button>
+  <button type="submit" name="accion" value="eliminar">Eliminar Usuario</button>
+  <button type="submit" name="accion" value="modificar">Modificar Usuario</button>
+  <button type="submit" name="accion" value="buscar">Buscar Usuario</button>
+  </form>
+</section>
